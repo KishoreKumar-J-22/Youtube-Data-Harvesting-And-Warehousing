@@ -332,7 +332,7 @@ def videos_table():
         cursor.execute(drop_query)
         my_database.commit()
 
-        #try:
+        
         create_query = '''create table if not exists videos(channel_name varchar(100),
                                                         channel_id varchar(100),
                                                         video_id varchar(30) primary key,
@@ -470,7 +470,7 @@ def comments_table():
         my_database.commit()
 
 
-# 
+
         
 def tables():
     channels_table()
@@ -481,7 +481,7 @@ def tables():
     return "Tables Created Successfully"
 
 
-#
+
 
 def show_channels_table():
 
@@ -495,7 +495,7 @@ def show_channels_table():
     return df
 
 
-#
+
 
 def show_playlists_table():
     playlist_list = []
@@ -509,7 +509,7 @@ def show_playlists_table():
     return df1
 
 
-#
+
 
 def show_video_table():    
         video_list = []
@@ -523,7 +523,7 @@ def show_video_table():
         return df2
 
 
-#
+
 
 def show_comments_table():
 
@@ -587,7 +587,7 @@ elif show_table == "COMMENTS":
 
 # Question Part
 
-# SQL connection
+  # SQL connection
 
 my_database = psycopg2.connect(host = "localhost",
                                     user = "postgres",
